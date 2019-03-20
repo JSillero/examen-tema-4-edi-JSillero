@@ -2,11 +2,11 @@
 public class Gato {
 
 		protected Gato() {
-				
-	}
-
-	void maullar() {
+		public void maullar() {
 		System.out.println("Miau");
 	}
+	}
+
+	
 
 }
