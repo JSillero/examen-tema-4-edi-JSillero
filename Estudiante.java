@@ -1,14 +1,14 @@
 enum Curso {
 	PRIMARIA, ESO, BACHILLERATO, UNIVERSIDAD
 };
-
-public class Estudiante{
+/**
+ * 
+ * Clase estudiante
+ * @author d18sisaj
+ * 
+ */
+public class Estudiante extends Persona{
 	Curso curso;
-	private String nombre;
-	private String apellidos;
-	private String nif;
-
-	
 	protected Estudiante(String nombre, String apellidos, String nif,
 			Curso curso) {
 		this.nombre = nombre;
@@ -17,42 +17,42 @@ public class Estudiante{
 		this.curso = curso;
 	}
 
-	
-	protected String getNombre() {
-		return nombre;
-	}
-
-	
+	/**
+	 * Cambia el nombre
+	 * @param nombre
+	 */
 	protected void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
 
-	
-	protected String getApellidos() {
-		return apellidos;
-	}
-
-	
+	/**
+	 * cambia el apellido
+	 * @param apellidos
+	 */
 	protected void setApellidos(String apellidos) {
 		this.apellidos = apellidos;
 	}
 
-	
-	protected String getNif() {
-		return nif;
-	}
-
-	
+	/**
+	 * canbia el nif
+	 * @param nif
+	 */
 	protected void setNif(String nif) {
 		this.nif = nif;
 	}
 		
-	
+	/**
+	 * devuelve el curso
+	 * @return
+	 */
 	protected Curso getCurso() {
 		return curso;
 	}
 
-	
+	/**
+	 * cambia el curso
+	 * @param curso
+	 */
 	protected void setCurso(Curso curso) {
 		this.curso = curso;
 	}
